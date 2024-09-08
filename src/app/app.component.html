@@ -1,0 +1,7 @@
+<div>
+  <h1>Please enter comma separated numbers!</h1>
+  <input (input)="onInput($event)" type="text">
+  <div *ngIf="!error">Sum: {{result}}</div>
+  <div *ngIf="error">{{error}}</div>
+</div>
+<router-outlet></router-outlet>
